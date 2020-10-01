@@ -1,0 +1,92 @@
+.container {
+    position: relative;
+    text-align: center;
+}
+
+#dragonforce {
+    display: block;
+    margin: 10px;
+}
+
+#dragonforce:hover {
+    text-transform: capitalize;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: indianred;
+    position: fixed;
+    margin: auto;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar:hover {
+    background: #444;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+}
+
+#overlay {
+    font-family: fantasy;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+img {
+    filter: saturate(100%);
+    border-radius: 40%;
+}
+
+img:hover {
+    filter: blur(5px);
+    border-radius: 0px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.column {
+    height: 25px;
+    flex: 50%;
+    color: tomato;
+}
+
+footer {
+    text-align: center;
+    font-weight: bolder;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: fantasy;
+}
+
+table, th, td {
+    border: 1px solid darkgreen;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: hotpink;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
