@@ -1,15 +1,42 @@
 .container {
     position: relative;
-    text-align: center;
+    width: 50%;
 }
 
-#dragonforce {
+img {
+    border-radius: 40%;
     display: block;
-    margin: 10px;
+    width: 100%;
+    height: auto;
 }
 
-#dragonforce:hover {
-    text-transform: capitalize;
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: lightpink;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    height: 100%;
+}
+
+
+.text {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 .navbar {
@@ -34,22 +61,6 @@
     color: #FFF;
 }
 
-#overlay {
-    font-family: fantasy;
-    font-size: 25px;
-    font-weight: bolder;
-}
-
-img {
-    filter: saturate(100%);
-    border-radius: 40%;
-}
-
-img:hover {
-    filter: blur(5px);
-    border-radius: 0px;
-}
-
 .row {
     width: 100%;
     display: flex;
@@ -61,6 +72,14 @@ img:hover {
     color: tomato;
 }
 
+#dragonforce {
+    display: block;
+}
+
+#dragonforce:hover {
+    text-transform: capitalize;
+}
+
 footer {
     text-align: center;
     font-weight: bolder;
@@ -69,6 +88,7 @@ footer {
 table {
     border-collapse: collapse;
     font-family: fantasy;
+    margin: 50px;
 }
 
 table, th, td {
